@@ -1,0 +1,23 @@
+{
+  "name": "HTML",
+  "homepage": "https://github.com/G18siqueira/portfolio-felipe",
+  "authors": [
+    "Gustavo Siqueira <gustavo18siqueira@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "^0.97.8",
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3"
+  }
+}
