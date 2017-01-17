@@ -1,0 +1,28 @@
+header        
+    
+    .menu-fixo
+        @extend .white
+        height: 150px
+        position: fixed
+        box-shadow: none
+        border-bottom: 1px solid $branco3
+        z-index: 2
+        
+        .container
+            height: 100%
+            +flexbox
+            +justify-content(space-between)
+            +align-items(center)    
+            ul
+                +order(2)
+                +align-self(flex-end)
+                li
+                    a
+                        @extend .black-text
+                        +font-size(18px)
+            .logotipo 
+                +order(1)                
+                height: 100%
+                img
+                    
+                    
