@@ -1,5 +1,6 @@
 main
-    z-index: 1    
+    margin-bottom: 50px
+    min-height: 350px // para delimitar o footer
     .container
         
         .row
@@ -10,12 +11,15 @@ main
                     ul
                         +flexbox
                         +justify-content(center)
+                        margin-bottom: 10px
                         
                         li
+                            
                             a
                                 @extend .black-text
                                 +font-size(15px)  
                                 text-transform: capitalize
+                                
                             
                 #retratos 
                     +flexbox
@@ -25,13 +29,13 @@ main
                     
                        
                     figure
-                        width: 24.5%
-                        margin: 0
+                        width: 33%
+                        margin: 0 0 5px
                         img
                             width: 100%
                             
                         #materialbox-overlay
-                            
+                            z-index: 3
                             
                             
                 #ensaios  

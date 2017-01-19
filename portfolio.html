@@ -53,68 +53,106 @@
                     
                     <section id="retratos">
                         <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/imagem4.jpg" alt="">
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/01q.jpg" alt="">
+                        </figure>   
+                        
+                        <figure >
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/07q.jpg" alt="">
+                        </figure>  
+                        
+                        <figure >
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/06q.jpg" alt="">
+                        </figure>   
+                        
+                        <figure >
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/02.jpg" alt="">
                         </figure>
                         
                         <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/imagem1.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/05q.jpg" alt="">
+                        </figure>   
                         
                         <figure >
-                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/03.jpg" alt="">
+                        </figure>  
                         
                         <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/04.jpg" alt="">
+                        </figure>   
                         
                         <figure >
-                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/08.jpg" alt="">
+                        </figure> 
                         
                         <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/09.jpg" alt="">
+                        </figure>   
                         
                         <figure >
-                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/10q.jpg" alt="">
+                        </figure>                                                           
                     </section>
                     
                     <section id="ensaios">
-                        <figure >
-                            <img src="images/imagem2.jpg" alt="">
+                        <figure>
+                            <a href="#modal1">
+                                <img src="images/Ensaios/Kevelin/01.jpg" alt="">
+                            </a>
+                            
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <h4>Teste Modal</h4>
+                                    <img src="images/Ensaios/Kevelin/01.jpg" alt="">
+                                    <p>teste para uma descrição</p>
+                                    
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Visualizar</a>
+                                    </div>
+                                </div>                         
+                            </div>                     
                         </figure>
                         
-                        <figure >
-                            <img src="images/imagem4.jpg" alt="">
+                        <figure>
+                            <a href="#modal2">
+                                <img src="images/Ensaios/Marina/03.jpg" alt="">
+                            </a>
+                            
+                            <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                    <h4>Teste Modal</h4>
+                                    <img src="images/Ensaios/Marina/03.jpg" alt="">
+                                    <p>teste para uma descrição</p>
+                                    
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Visualizar</a>
+                                    </div>
+                                </div>                         
+                            </div>                     
                         </figure>
+                        
+                        <figure>
+                            <a href="#modal3">
+                                <img src="images/Ensaios/Morgana/05.jpg" alt="">
+                            </a>
+                            
+                            <div id="modal3" class="modal">
+                                <div class="modal-content">
+                                    <h4>Teste Modal</h4>
+                                    <img src="images/Ensaios/Morgana/05.jpg" alt="">
+                                    <p>teste para uma descrição</p>
+                                    
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Visualizar</a>
+                                    </div>
+                                </div>                         
+                            </div>                     
+                        </figure>
+                        
+                        
                     </section>
                     
                     <section id="graphics">
-                        <figure >
-                            <img src="images/imagem1.jpg" alt="">
-                        </figure>
+                        
                     </section>
                     
                     <section id="autoral">
@@ -154,6 +192,11 @@
     <script>
         $(document).ready(function(){
             $('.materialboxed').materialbox();
+            
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+            
+            
         });
     </script>
 </body>
