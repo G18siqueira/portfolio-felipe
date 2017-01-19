@@ -1,12 +1,13 @@
 main
+    // usando o position relative para descer o conteudo devido ao position fixed do header, e o z-index para não sobrepor o menu.
     position: relative
-    top: 200px
+    top: 250px
     
     z-index: 1
     .container
         .row
             #contprincipal
-                
+                // ao invés de usar as classes do materialize preferi nas imagens preferei fazer na mão usando o flexbox
                 +flexbox
                 +flex-direction(row)
                 +justify-content(space-between)    

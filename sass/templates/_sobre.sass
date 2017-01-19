@@ -1,0 +1,25 @@
+main
+    // usando o position relative para descer o conteudo devido ao position fixed do header, e o z-index para não sobrepor o menu.
+    position: relative
+    top: 250px
+    
+    z-index: 1
+    .container
+        .row
+            #sobre
+                // utilizando o float para o texto quebrar ao redor da imagem.
+                img
+                    width: 50%
+                    float: right
+                    margin: 0 0px 10px 20px
+                    
+                p              
+                    +font-size(18px)
+                    margin-top: 0
+                    
+                //.foto
+                    width: 50%
+                    float: right
+                    img
+                        width: 100%
+                        

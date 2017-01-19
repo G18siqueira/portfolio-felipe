@@ -1,6 +1,6 @@
-header        
-    
+header          
     .menu-fixo
+        // deixando o menu fixo com o position fixed e usando o z-index para nada sobrepro ele e sobre escrevendo algumas configurações do materialize por padrão.
         @extend .white
         height: 150px
         position: fixed
@@ -9,6 +9,7 @@ header
         z-index: 2
         
         .container
+            //flexbox para ordernar e posicionar os elementos
             height: 100%
             +flexbox
             +justify-content(space-between)
