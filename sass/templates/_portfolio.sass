@@ -1,8 +1,12 @@
 main
+    z-index: 1    
     .container
+        
         .row
             #portfolio
+                
                 .aba
+                    
                     ul
                         +flexbox
                         +justify-content(center)
@@ -12,8 +16,44 @@ main
                                 @extend .black-text
                                 +font-size(15px)  
                                 text-transform: capitalize
-                #tudo            
-                #retratos            
-                #ensaios            
-                #graphics            
-                #autoral            
+                            
+                #retratos 
+                    +flexbox
+                    +flex-direction(row)
+                    +flex-wrap(wrap) 
+                    +justify-content(space-between)  
+                    
+                       
+                    figure
+                        width: 24.5%
+                        margin: 0
+                        img
+                            width: 100%
+                            
+                        #materialbox-overlay
+                            
+                            
+                            
+                #ensaios  
+                    +flexbox
+                    +flex-direction(row)
+                    figure
+                        width: 33.33%
+                        img
+                            width: 100%
+                            
+                #graphics  
+                    +flexbox
+                    +flex-direction(row)
+                    figure
+                        width: 33.33%
+                        img
+                            width: 100%
+                            
+                #autoral  
+                    +flexbox
+                    +flex-direction(row)
+                    figure
+                        width: 33.33%
+                        img
+                            width: 100%

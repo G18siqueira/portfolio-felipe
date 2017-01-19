@@ -43,64 +43,87 @@
             <div class="row">
                 <section id="portfolio">
                     <div class="aba">
-                        <ul class="tabs">
-                            <li class="tab"><a href="#tudo">Tudo</a></li>
+                        <ul class="tabs">   
                             <li class="tab"><a href="#retratos">Retratos</a></li>
                             <li class="tab"><a href="#ensaios">Ensaios</a></li>
                             <li class="tab"><a href="#graphics">Graphics</a></li>
                             <li class="tab"><a href="#autoral">Autoral</a></li>  
                         </ul>
-                    </div>
-                    
-                    <section id="tudo">
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem1.jpg" alt="">
-                        </figure>
-                        
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem2.jpg" alt="">
-                        </figure>
-                        
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem3.jpg" alt="">
-                        </figure>
-                        
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem4.jpg" alt="">
-                        </figure>
-                    </section>
+                    </div>           
                     
                     <section id="retratos">
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem3.jpg" alt="">
+                        <figure >
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/imagem4.jpg" alt="">
                         </figure>
                         
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem1.jpg" alt="">
+                        <figure >
+                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/imagem1.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img class="materialboxed" src="images/imagem3.jpg" alt="">
+                        </figure>
+                        
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
                         </figure>
                     </section>
                     
                     <section id="ensaios">
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem2.jpg" alt="">
+                        <figure >
+                            <img src="images/imagem2.jpg" alt="">
                         </figure>
                         
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem4.jpg" alt="">
+                        <figure >
+                            <img src="images/imagem4.jpg" alt="">
                         </figure>
                     </section>
                     
                     <section id="graphics">
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem1.jpg" alt="">
+                        <figure >
+                            <img src="images/imagem1.jpg" alt="">
                         </figure>
                     </section>
                     
                     <section id="autoral">
-                        <figure class="col l4">
-                            <img class="responsive-img" src="images/imagem2.jpg" alt="">
+                        <figure >
+                            <img src="images/imagem2.jpg" alt="">
                         </figure>
                     </section>
+                    
+                    
                 </section>
             </div>
         </div>
@@ -128,5 +151,10 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
 </body>
 </html>
