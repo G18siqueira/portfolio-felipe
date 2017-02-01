@@ -1,0 +1,140 @@
+body
+    /* MENU RESPONSIVO */
+    .menu-responsivo
+        display: none
+        .container /* <- classe bootstrap*/
+            ul
+                li
+                    a
+    
+    /* MENU TOGGLE */
+    .menu-toggle
+        display: none  
+        
+    /* MENU RESPONSIVO */    
+    +breakpoint($tablet)
+        .menu-responsivo
+            +flexbox            
+            background-color: #fff
+            position: fixed
+            width: 100%
+            height: 100%
+            top: 100%
+            right: 100%
+            margin-top: 60px
+            z-index: 3
+            .container
+                +flexbox
+                +flex-wrap(wrap)
+                +justify-content(center)                
+                height: 100%
+                
+                ul
+                    padding-top: 30px
+                    height: 100%
+                    
+                    li
+                        width: 100%
+                        text-align: center
+                        a
+                            +font-size(25px)
+                            line-height: 225%
+                            color: #000    
+                            
+                        
+                        .active
+                            
+                            
+                        
+            &.ativo
+                +transition(.2s)
+                right: 0 
+                top: 0    
+                
+        //.menu-responsivo-scroll        
+            margin-top: 60px
+
+    +breakpoint($celular)
+        .menu-responsivo
+            
+    
+    
+    /* MENU TOGGLE */    
+    +breakpoint($tablet)  
+        .menu-toggle
+            +flexbox 
+            position: fixed
+            background-color: #fff;
+            width: 100%
+            height: 60px
+            border-bottom: 1px solid $branco3
+            //margin-top: 30px
+            z-index: 3
+
+            .container /* <- classe bootstrap*/
+                //background-color: $vermelho
+                +flexbox
+                +justify-content(center)
+                +align-items(center)   
+                width: 100%
+                height: 100%
+                .toggle
+                    position: relative
+                    width: 28px
+                    height: 38px                    
+                    overflow: hidden
+
+                    &:hover
+                        span
+                            &:nth-child(1)
+                                top: 12px
+
+                            &:nth-child(3)
+                                top: 22px
+
+                    &.ativo
+                            span
+                                &:nth-child(1)
+                                    top: 16px
+                                    //+rotate(48deg)
+
+                                &:nth-child(2)
+                                    display: none
+
+                                &:nth-child(3)
+                                    top: 16px
+                                    //+rotate(128deg)  
+
+                    span
+                        background-color: #000
+                        display: block
+                        position: absolute
+                        width: 100%
+                        height: 2px
+                        left: 0
+                        content: " "
+                        +transition(.1s)
+
+                        &:nth-child(1)
+                        top: 10px;
+
+                        &:nth-child(2)
+                            top: 17px
+
+                        &:nth-child(3)
+                            top: 24px 
+                        
+        //.toggle-fixo-scroll /*classe ativada pelo jquery*/
+            position: fixed
+            top: -30px    
+            
+                        
+    +breakpoint($celular)                    
+        /* Menu Toggle */
+        .menu-toggle 
+            position: fixed
+            margin-top: 0
+    
+        //.toggle-fixo-scroll /*classe ativada pelo jquery*/
+            position: fixed
+            top: -30px    

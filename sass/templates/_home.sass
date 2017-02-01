@@ -7,6 +7,7 @@ main
                 // ao invés de usar as classes do materialize preferi nas imagens preferei fazer na mão usando o flexbox
                 +flexbox
                 +flex-direction(row)
+                +flex-wrap(wrap)
                 +justify-content(space-between)    
                 .imagem1
                     width: 49.5%
@@ -16,3 +17,9 @@ main
                     width: 49.5%
                     img
                         width: 100%
+                +breakpoint($celular)
+                    .imagem1
+                        width: 100%
+                    .imagem2
+                        width: 100%
+   

@@ -38,7 +38,12 @@ main
                             
                         #materialbox-overlay
                             z-index: 3
-                            
+                +breakpoint($tablet) 
+                    
+                +breakpoint($celular)            
+                    #retratos
+                        figure
+                            width: 100%
                             
                 #ensaios  
                     +flexbox
@@ -58,6 +63,13 @@ main
                                 p
                                 .modal-footer
                                     a
+                +breakpoint($tablet) 
+                    
+                +breakpoint($celular)    
+                    #ensaios
+                        figure
+                            width: 100%
+                            
                 #graphics  
                     +flexbox
                     +flex-direction(row)
@@ -68,7 +80,13 @@ main
                         margin: 0 0 5px
                         img
                             width: 100%
-                            
+                    
+                +breakpoint($tablet) 
+                    
+                +breakpoint($celular)            
+                    #graphics
+                        figure
+                            width: 100%
                 #autoral  
                     +flexbox
                     +flex-direction(row)
