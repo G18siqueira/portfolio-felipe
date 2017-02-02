@@ -8,6 +8,7 @@ footer
         //usando o flexbox para posicionar os elementos dentro da div
         +flexbox
         +justify-content(space-between)
+        +flex-wrap(wrap)
         
         .contato
             width: 50%
@@ -24,3 +25,27 @@ footer
                 +align-self(flex-end)
                 margin: 0 5px    
                 
++breakpoint($celular)
+    footer
+        .container
+            +justify-content(center)
+            .contato 
+                width: 100%
+                +flexbox
+                +flex-wrap(wrap)
+                    
+            h3
+                width: 100%
+                text-align: center
+            .cont
+                display: none
+            span
+                width: 100%
+                text-align: center
+                padding: 5px
+                
+            .redes-sociais
+                width: 50%
+                +justify-content(center)
+                    
+                a             
