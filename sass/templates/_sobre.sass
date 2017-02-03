@@ -8,9 +8,15 @@ main
                 img
                     // utilizando o float para o texto quebrar ao redor da imagem.
                     width: 50%
+                    //height: 70vh
                     float: right
                     margin: 0 0px 10px 20px
+                    //+border-radius(20%)
                 
+                +breakpoint($tablet)
+                    img
+                        width: 100%
+                        margin-bottom: 50px
                 +breakpoint($celular)
                     img
                         width: 100%

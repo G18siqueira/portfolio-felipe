@@ -13,7 +13,7 @@ main
                         +justify-content(center)
                         margin-bottom: 10px
                         
-                        li
+                        li                          
                             
                             a
                                 @extend .black-text
@@ -22,7 +22,15 @@ main
                                 
                         .indicator
                             background-color: #000
+                
+                +breakpoint($tablet)    
+                    #portfolio
+                        .aba
+                            ul
                             
+                                li
+                                    
+                +breakpoint($celular)            
                 #retratos 
                     +flexbox
                     +flex-direction(row)
@@ -77,7 +85,7 @@ main
                     +justify-content(space-between)    
                     figure
                         width: 49.7%
-                        margin: 0 0 5px
+                        margin: 0 0 0 0
                         img
                             width: 100%
                     
@@ -90,7 +98,16 @@ main
                 #autoral  
                     +flexbox
                     +flex-direction(row)
+                    +flex-wrap(wrap)  
+                    +justify-content(space-between)    
                     figure
-                        width: 33.33%
+                        width: 49.7%
+                        margin: 0 0 5px
                         img
+                            width: 100%
+                            
+                +breakpoint($tablet)            
+                +breakpoint($celular)
+                    #autoral
+                        figure
                             width: 100%

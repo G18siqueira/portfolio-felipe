@@ -1,0 +1,18 @@
+main
+    .container
+        #modelo2
+            +flexbox
+            +flex-direction(row)
+            +flex-wrap(wrap)
+            +justify-content(space-between)
+            figure            
+                width: 49.7%
+                margin: 0 0 5px
+                img
+                    width: 100%
+        +breakpoint($tablet) 
+
+        +breakpoint($celular)            
+            #modelo2
+                figure
+                    width: 100%            

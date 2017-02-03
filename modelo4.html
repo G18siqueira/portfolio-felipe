@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfólio Felipe</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Import font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">    
+</head>
+<body>
+    <!-- MENU RESPONSIVO -->
+    <nav class="menu-responsivo"><!-- purple darken é uma classe materialize -->
+        <div class="container"> <!-- classe bootstrap -->
+            <ul>
+                <li><a href="index.html" class="home-marker link-toggle active">Home</a></li>
+                <li><a href="sobre.html" class="sobre-marker link-toggle">Sobre</a></li>
+                <li><a href="portfolio.html" class="portfolio-marker link-toggle">Portfólio</a></li>
+                <li><a href="contato.html" class="contato-marker link-toggle">Contato</a></li>
+            </ul>            
+        </div>        
+    </nav>
+    
+    <!-- menu toggle -->
+    <div class="menu-toggle"><!-- purple darken é uma classe materialize -->
+       <div class="container"> <!-- classe bootstrap -->
+            <a href="#" class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <header>
+       <!-- MENU FIXO -->
+        <nav class="menu-fixo">
+            <div class="container">                
+                <ul>
+                    <li><a class="home" href="index.html">Home</a></li>
+                    <li><a class="sobre" href="sobre.html">Sobre</a></li>
+                    <li><a class="port" href="portfolio.html">Portfólio</a></li>
+                    <li><a class="contato" href="contato.html">Contato</a></li>
+                </ul>
+                
+                <!-- LOGOTIPO -->
+                <div class="logotipo">
+                    <a href="index.html"><img src="images/logo1.png" alt=""></a>
+                </div>
+            </div>    
+        </nav> 
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="modelo1">
+
+                <!--
+                <figure >
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Kevelin/01.jpg" alt="">
+                </figure>
+                -->
+
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/01.jpg" alt="">
+                </figure>
+                
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/02.jpg" alt="">
+                </figure>
+                
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/03.jpg" alt="">
+                </figure>
+                
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/04.jpg" alt="">
+                </figure>
+                
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/05.jpg" alt="">
+                </figure>
+                
+                <figure>
+                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Livia/06.jpg" alt="">
+                </figure>    
+            </section>
+        </div>
+    </main>
+    
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="contato">
+                <h3>Contato</h3>
+                <span class="fa fa-at cont"></span>
+                <span>fcarnevale.fotografia@gmail.com</span>
+                <br>
+                <span class="fa fa-phone-square cont"> </span>
+                <span>(11)99719-8891</span>
+            </div>
+            
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/fe.carnevale" class="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>    
+                
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+            
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();           
+        });       
+    </script>
+</body>
+</html>
