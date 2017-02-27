@@ -45,7 +45,7 @@
         <nav class="menu-fixo">
             <div class="container">                
                 <ul>
-                    <li><a class="home" href="index.html">Homee</a></li>
+                    <li><a class="home" href="index.html">Home</a></li>
                     <li><a class="sobre" href="sobre.html">Sobre</a></li>
                     <li><a class="port" href="portfolio.html">Portfólio</a></li>
                     <li><a class="contato" href="contato.html">Contato</a></li>
@@ -64,12 +64,37 @@
         <div class="container">
             <div class="row">
                 <section id="contprincipal">
-                    <div class="imagem1 ">
-                        <img  src="images/imagem1.jpg" alt="">    
-                    </div>
-                    
-                    <div class="imagem2">
-                        <img  src="images/imagem1.jpg" alt=""> 
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/Retratos/02.jpg" alt="">
+                                <div class="caption center-align">
+                                    <h3>Lorem ipsum.</h3>
+                                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                </div>  
+                            </li> 
+                            <li>
+                                <img src="images/Graphics/14.jpg" alt=""> 
+                                <div class="caption left-align">
+                                    <h3>Lorem ipsum.</h3>
+                                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                </div>   
+                            </li> 
+                            <li>
+                                <img src="images/AutoralTheAway/03.jpg" alt="">  
+                                <div class="caption right-align">
+                                    <h3>Lorem ipsum.</h3>
+                                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                </div>  
+                            </li> 
+                            <li>
+                                <img src="images/Ensaios/Kevelin/02.jpg" alt=""> 
+                                <div class="caption center-align">
+                                    <h3>Lorem ipsum.</h3>
+                                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+                                </div>   
+                            </li> 
+                        </ul>  
                     </div>
                 </section>
             </div>
@@ -99,6 +124,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+    </script>
     
 </body>
 </html>
