@@ -19,14 +19,21 @@ header
             ul
                 +order(2)
                 +align-self(flex-end)
+                    
                 
                 
                 li
+                        
                     
                     a
                         @extend .black-text
                         +font-size(15px)  
                         text-transform: uppercase
+                        
+                        &:hover
+                            background-color: transparent;
+                            font-weight: bolder
+                        
                         
             .logotipo 
                 +order(1)                
