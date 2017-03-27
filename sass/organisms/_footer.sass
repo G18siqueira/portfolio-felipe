@@ -23,7 +23,18 @@ footer
                 @extend .black-text
                 +font-size(30px)
                 +align-self(flex-end)
-                margin: 0 5px    
+                margin: 0 5px   
+            
+            .fa-facebook-square
+                +transition(0.1s)
+                &:hover
+                    color: $facebook;
+            
+            .fa-instagram
+                +transition(0.1s)
+                &:hover
+                    color: $instagram;
+                
                 
 +breakpoint($celular)
     footer
