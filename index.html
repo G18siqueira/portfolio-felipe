@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/conteudo.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="bower_components/lightslider/dist/css/lightslider.min.css">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -62,82 +63,39 @@
         <div class="container">
             <div class="row">
                 <section id="contprincipal">
-                    <div class="slider">
-                        <ul class="slides">
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/01.jpg" alt="">
-                                </a>
-                                <div class="caption center-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>  
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/02.jpg" alt=""> 
-                                </a>
-                                <div class="caption left-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>   
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/03.jpg" alt="">
-                                </a>  
-                                <div class="caption right-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>  
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/04.jpg" alt=""> 
-                                </a>
-                                <div class="caption center-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>   
+                    <div class="bannerEsquerda">
+                        <ul id="light-slider-esquerda">
+                            <li class="b1">
+                                
                             </li>
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/05.jpg" alt="">
-                                </a>
-                                <div class="caption center-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>  
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/06.jpg" alt=""> 
-                                </a>
-                                <div class="caption left-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>   
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/07.jpg" alt="">
-                                </a>  
-                                <div class="caption right-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>  
-                            </li> 
-                            <li>
-                                <a href="portfolio.html">
-                                    <img src="images/Home/08.jpg" alt=""> 
-                                </a>
-                                <div class="caption center-align">
-                                    <h3></h3>
-                                    <h5 class="light grey-text text-lighten-3"></h5>
-                                </div>   
-                            </li>  
-                        </ul>  
+                            <li class="b2">
+        
+                            </li>
+                            <li class="b3">
+
+                            </li>
+                            <li class="b4">
+
+                            </li>
+                        </ul>
                     </div>
+                    <div class="bannerDireita">
+                        <ul id="light-slider-direita">
+                            <li class="b1">
+                        
+                            </li>
+                            <li class="b2">
+
+                            </li>
+                            <li class="b3">
+
+                            </li>
+                            <li class="b4">
+
+                            </li>
+                        </ul>    
+                    </div>
+                        
                 </section>
             </div>
         </div>
@@ -166,9 +124,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.slider').slider();
+            $("#light-slider").lightSlider();
         });
     </script>
     
