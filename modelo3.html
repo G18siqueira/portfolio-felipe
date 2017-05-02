@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/conteudo.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.min.css">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -59,33 +60,35 @@
     <main>
         <div class="container">
             <section id="modelo3">
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/01.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/02.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/03.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/04.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/05.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/06.jpg" alt="">
-                </figure>
-
-                <figure >
-                    <img class="materialboxed" data-caption="Teste 12345678910" src="images/Ensaios/Morgana/07.jpg" alt="">
-                </figure>
+                <div id="lightgallery-modelo3">                    
+                    <a href="images/Ensaios/Morgana/01.jpg">
+                        <img src="images/Ensaios/Morgana/01.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/02.jpg">
+                        <img src="images/Ensaios/Morgana/02.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/03.jpg">
+                        <img src="images/Ensaios/Morgana/03.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/04.jpg">
+                        <img src="images/Ensaios/Morgana/04.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/05.jpg">
+                        <img src="images/Ensaios/Morgana/05.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/06.jpg">
+                        <img src="images/Ensaios/Morgana/06.jpg" />
+                    </a>
+                    
+                    <a href="images/Ensaios/Morgana/07.jpg">
+                        <img src="images/Ensaios/Morgana/07.jpg"/>
+                    </a>
+                </div>               
             </section>
         </div>
     </main>
@@ -113,6 +116,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    <script src="bower_components/lg-thumbnail/dist/lg-thumbnail.min.js"></script>
+    <script src="bower_components/lg-pager/dist/lg-pager.min.js"></script>
+    <script src="bower_components/lg-zoom/dist/lg-zoom.min.js"></script>
+    <script src="bower_components/lg-autoplay/dist/lg-autoplay.min.js"></script>
+    <script src="bower_components/lg-fullscreen/dist/lg-fullscreen.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.materialboxed').materialbox();

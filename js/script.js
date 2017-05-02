@@ -2,7 +2,37 @@ $(document).ready(function() {
     $("#lightgallery-retratos").lightGallery({
         thumbnail: true,
         download: false
+    });  
+    
+    $("#lightgallery-graphics").lightGallery({
+        thumbnail: true,
+        download: false
+    });  
+    
+    $("#lightgallery-autoral").lightGallery({
+        thumbnail: true,
+        download: false
+    });  
+    
+    $("#lightgallery-modelo1").lightGallery({
+        thumbnail: true,
+        download: false
     }); 
+    
+    $("#lightgallery-modelo2").lightGallery({
+        thumbnail: true,
+        download: false
+    });
+    
+    $("#lightgallery-modelo3").lightGallery({
+        thumbnail: true,
+        download: false
+    });
+    
+    $("#lightgallery-modelo4").lightGallery({
+        thumbnail: true,
+        download: false
+    });
 });
 
 jQuery(document).ready(function ($) {

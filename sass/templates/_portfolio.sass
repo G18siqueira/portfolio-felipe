@@ -2,8 +2,7 @@ main
     margin-bottom: 50px
     min-height: 350px // para delimitar o footer   
     
-    .container
-        
+    .container        
         .row
             #portfolio
                 .aba
@@ -31,12 +30,18 @@ main
                         +justify-content(space-between)  
                         a
                             width: 49.7%
-                            margin: 0 0 5px
+                            margin: 0 0
                             img
                                 width: 100%
+                +breakpoint($celular)
+                    #retratos
+                        #lightgallery-retratos
+                            a
+                                width: 100%
+                                img
                                 
                 #ensaios
-                    #lightgallery-retratos
+                    #lightgallery-ensaios
                         +flexbox
                         +flex-direction(row)
                         +flex-wrap(wrap) 
@@ -46,117 +51,46 @@ main
                             margin: 0
                             img
                                 width: 100%
-    
-//main
-    margin-bottom: 50px
-    min-height: 350px // para delimitar o footer
-    .container
-        
-        .row
-            #portfolio
-                
-                .aba
-                    
-                    ul
-                        +flexbox
-                        +justify-content(center)
-                        margin-bottom: 10px
-                        
-                        li                          
-                            
-                            a
-                                @extend .black-text
-                                +font-size(15px)  
-                                text-transform: capitalize
-                                
-                        .indicator
-                            background-color: #000
-                
-                +breakpoint($tablet)    
-                    #portfolio
-                        .aba
-                            ul
-                            
-                                li
-                                    
-                +breakpoint($celular)            
-                #retratos 
-                    +flexbox
-                    +flex-direction(row)
-                    +flex-wrap(wrap) 
-                    +justify-content(space-between)  
-                    
-                       
-                    figure
-                        width: 49.7%
-                        margin: 0 0 5px
-                        img
-                            width: 100%
-                            
-                        #materialbox-overlay
-                            z-index: 3
-                +breakpoint($tablet) 
-                    
-                +breakpoint($celular)            
-                    #retratos
-                        figure
-                            width: 100%
-                            
-                #ensaios  
-                    +flexbox
-                    +flex-direction(row)
-                    +flex-wrap(wrap) 
-                    +justify-content(space-between)
-                    figure
-                        width: 49.7%
-                        margin: 0
-                        a
-                            img
-                                width: 100%
-                        .modal
-                            .modal--content
-                                h4
-                                img
-                                p
-                                .modal-footer
-                                    a
-                +breakpoint($tablet) 
-                    
-                +breakpoint($celular)    
+                +breakpoint($celular)
                     #ensaios
-                        figure
-                            width: 100%
-                            
-                #graphics  
-                    +flexbox
-                    +flex-direction(row)
-                    +flex-wrap(wrap)
-                    +justify-content(space-between)    
-                    figure
-                        width: 49.7%
-                        margin: 0 0 0 0
-                        img
-                            width: 100%
-                    
-                +breakpoint($tablet) 
-                    
-                +breakpoint($celular)            
+                        #lightgallery-ensaios
+                            a
+                                width: 100%
+                                img                
+                                
+                #graphics
+                    #lightgallery-graphics
+                        +flexbox
+                        +flex-direction(row)
+                        +flex-wrap(wrap) 
+                        +justify-content(space-between)  
+                        a
+                            width: 49.7%
+                            margin: 0
+                            img
+                                width: 100%  
+                +breakpoint($celular)
                     #graphics
-                        figure
-                            width: 100%
-                #autoral  
-                    +flexbox
-                    +flex-direction(row)
-                    +flex-wrap(wrap)  
-                    +justify-content(space-between)    
-                    figure
-                        width: 49.7%
-                        margin: 0 0 5px
-                        img
-                            width: 100%
-                            
-                +breakpoint($tablet)            
+                        #lightgallery-graphics
+                            a
+                                width: 100%
+                                img                
+                                
+                #autoral
+                    #lightgallery-autoral
+                        +flexbox
+                        +flex-direction(row)
+                        +flex-wrap(wrap) 
+                        +justify-content(space-between)  
+                        a
+                            width: 49.7%
+                            margin: 0
+                            img
+                                width: 100%      
                 +breakpoint($celular)
                     #autoral
-                        figure
-                            width: 100%
+                        #lightgallery-autoral
+                            a
+                                width: 100%
+                                img                
+                                

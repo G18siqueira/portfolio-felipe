@@ -1,18 +1,14 @@
 main
     .container
-        #modelo3
-            +flexbox
-            +flex-direction(row)
-            +flex-wrap(wrap)
-            +justify-content(space-between)
-            figure            
-                width: 49.7%
-                margin: 0 0 5px
-                img
-                    width: 100%
-        +breakpoint($tablet) 
-
-        +breakpoint($celular)            
-            #modelo3
-                figure
-                    width: 100%            
+        #modelo3           
+            #lightgallery-modelo3 
+                +flexbox
+                +flex-direction(row)
+                +flex-wrap(wrap)
+                +justify-content(space-between)
+                    
+                a
+                    width: 49.7%
+                    margin: 0 0
+                    img
+                        width: 100%    
