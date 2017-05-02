@@ -1,5 +1,43 @@
 main
     margin-bottom: 50px
+    min-height: 350px // para delimitar o footer   
+    
+    .container
+        
+        .row
+            #portfolio
+                .aba
+                    
+                    ul
+                        +flexbox
+                        +justify-content(center)
+                        margin-bottom: 10px
+                        
+                        li                          
+                            
+                            a
+                                @extend .black-text
+                                +font-size(15px)  
+                                text-transform: capitalize
+                                
+                        .indicator
+                            background-color: #000
+                            
+                #retratos
+                    #lightgallery-retratos
+                        +flexbox
+                        +flex-direction(row)
+                        +flex-wrap(wrap) 
+                        +justify-content(space-between)  
+                        a
+                            width: 49.7%
+                            margin: 0 0 5px
+                            img
+                                width: 100%
+                                
+    
+//main
+    margin-bottom: 50px
     min-height: 350px // para delimitar o footer
     .container
         

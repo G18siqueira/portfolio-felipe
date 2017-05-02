@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/conteudo.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.min.css">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -71,45 +72,46 @@
                     </div>           
                     
                     <section id="retratos">
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/01.jpg" alt="">
-                        </figure>   
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/02.jpg" alt="">
-                        </figure>  
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/03.jpg" alt="">
-                        </figure>   
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/04.jpg" alt="">
-                        </figure>
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/05.jpg" alt="">
-                        </figure>   
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/06.jpg" alt="">
-                        </figure>  
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/07.jpg" alt="">
-                        </figure>   
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/08.jpg" alt="">
-                        </figure> 
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/09.jpg" alt="">
-                        </figure>   
-                        
-                        <figure >
-                            <img class="materialboxed" data-caption="Teste 12345678910" src="images/Retratos/10.jpg" alt="">
-                        </figure>                                                           
+                        <div id="lightgallery-retratos">
+                            <a href="images/Retratos/01.jpg">
+                                <img src="images/Retratos/01.jpg" />
+                            </a> 
+                            
+                            <a href="images/Retratos/02.jpg">
+                                <img src="images/Retratos/02.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/03.jpg">
+                                <img src="images/Retratos/03.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/04.jpg">
+                                <img src="images/Retratos/04.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/05.jpg">
+                                <img src="images/Retratos/05.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/06.jpg">
+                                <img src="images/Retratos/06.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/07.jpg">
+                                <img src="images/Retratos/07.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/08.jpg">
+                                <img src="images/Retratos/08.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/09.jpg">
+                                <img src="images/Retratos/09.jpg" />
+                            </a>
+                            
+                            <a href="images/Retratos/10.jpg">
+                                <img src="images/Retratos/10.jpg" />
+                            </a>
                     </section>
                     
                     <section id="ensaios">
@@ -309,6 +311,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    <script src="bower_components/lg-thumbnail/dist/lg-thumbnail.min.js"></script>
+    <script src="bower_components/lg-pager/dist/lg-pager.min.js"></script>
+    <script src="bower_components/lg-zoom/dist/lg-zoom.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.materialboxed').materialbox();
