@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         //thumbItem: 1//quantos fotos vão aparecer no thumb  
         loop: true, //ativa o loop no slider(sempre volta ao inicio)
         //vertical: false,
-        enableTouch: true, 
+        enableTouch: true 
     });
 });
 
