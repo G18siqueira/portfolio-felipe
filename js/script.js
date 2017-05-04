@@ -74,3 +74,32 @@ jQuery(document).ready(function ($) {
         enableTouch: true
     , });
 });
+
+/*FORMULÁRIO*/
+
+$(function ($) {
+    $('#form').submit(function (event) {
+        event.preventDefault();
+        
+        $.ajax({
+        url: "https://formspree.io/g.csiqueira@outlook.com", 
+        method: "POST",
+        data: {
+            email: $("#email").val(),
+            nome: $("#name").val(),
+            assunto: $("#subject").val(),
+            menssagem: $("#message").val()
+        },
+        dataType: "json"
+        }).done(function(){
+            $("#email").val("");
+            $("#name").val("");            
+            $("#subject").val("");
+            $("#message").val("");
+            alert("Email enviado com sucesso!");
+            
+        }).fail(function(){
+            alert("Erro ao enviar o email!");
+        });
+    });
+});

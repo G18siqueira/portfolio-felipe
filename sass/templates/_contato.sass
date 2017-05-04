@@ -1,3 +1,66 @@
 main        
     margin-bottom: 50px    
     min-height: 350px // para delimitar o footer
+    
+    #formulario    
+        +flexbox
+        +justify-content(center)
+        +flex-wrap(wrap)
+        margin: 0 20px    
+        
+        h1
+            4+font-size(40px)
+            width: 100%
+            text-align: center
+        h2
+            +font-size(38px)
+            width: 100%
+            text-align: center
+            
+        form
+            +flexbox
+            +justify-content(center)
+            +flex-wrap(wrap)    
+            width: 50%
+            input
+                border: 1px solid #aaa
+                padding: 0
+                
+                &::placeholder
+                   
+                    
+                
+            textarea
+                resize: none
+                height: 200px
+                
+                &::placeholder
+                   
+            
+            button
+                width: 50%
+                margin: 20px 0
+                
+    +breakpoint($tablet)
+        #formulario
+            h1
+            h2
+            form
+                width: 75%
+                input
+                textarea
+                button   
+                    width: 100%            
+                
+    +breakpoint($celular)
+        #formulario
+            h1
+            h2
+            form
+                width: 100%
+                input
+                textarea
+                button   
+                    width: 100%
+            
+                

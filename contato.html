@@ -60,8 +60,22 @@
         </nav> 
     </header>
     
-    <main>
-        
+    <main>        
+        <div id="formulario">
+            <h1>
+                Deixe sua duvida!
+            </h1>
+            <h2>
+                Vamos conversar sobre o ensaio.
+            </h2>
+            <form id="form" method="POST">                
+                <input type="email" name="email" id="email" placeholder="Email *" required="required" />
+                <input type="text" name="name" id="name" placeholder="Nome *" required="required" />                
+                <input type="text" name="subject" id="subject" placeholder="Assunto *" required="required" />
+                <textarea  name="message" id="message" placeholder="Mensagem *" required="required"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     
     <!-- RODAPÉ -->
