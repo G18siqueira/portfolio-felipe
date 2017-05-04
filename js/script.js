@@ -82,7 +82,7 @@ $(function ($) {
         event.preventDefault();
         
         $.ajax({
-        url: "https://formspree.io/g.csiqueira@outlook.com", 
+        url: "https://formspree.io/fcarnevale.fotografia@gmail.com", 
         method: "POST",
         data: {
             email: $("#email").val(),
