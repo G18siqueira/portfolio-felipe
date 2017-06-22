@@ -2,64 +2,102 @@ main
     margin-bottom: 50px    
     min-height: 350px // para delimitar o footer
     
-    #formulario    
-        +flexbox
-        +justify-content(center)
-        +flex-wrap(wrap)
-        margin: 0 20px    
-        
-        h1
-            4+font-size(40px)
-            width: 100%
-            text-align: center
-        h2
-            +font-size(38px)
-            width: 100%
-            text-align: center
-            
-        form
+    .container
+        #formulario    
             +flexbox
             +justify-content(center)
-            +flex-wrap(wrap)    
-            width: 50%
-            input
-                border: 1px solid #aaa
-                padding: 0 10px             
-                    
-                
-            textarea
-                resize: none
-                height: 200px
-                padding: 0 10px      
-                
-                &::placeholder
-                    
-                   
-            
-            button
-                width: 50%
-                margin: 20px 0
-                
-    +breakpoint($tablet)
-        #formulario
+            +flex-wrap(wrap)
+            margin: 0 20px    
+
             h1
-            h2
-            form
-                width: 75%
-                input
-                textarea
-                button   
-                    width: 100%            
-                
-    +breakpoint($celular)
-        #formulario
-            h1
-            h2
-            form
+                4+font-size(40px)
                 width: 100%
-                input
-                textarea
-                button   
+                text-align: center
+            h2
+                +font-size(28px)
+                width: 100%
+                text-align: center
+
+            form
+                +flexbox
+                +justify-content(space-between)
+                +flex-wrap(wrap)    
+                width: 100%
+                margin-top: 50px
+
+                .direito
+                    width: 48%
+                    +flexbox
+                    +flex-wrap(wrap)
+                    +align-items(center)    
+                    +align-content (space-between)   
+
+                    input
+                        border: 1px solid #aaa
+                        padding: 0 10px
+                        margin: 0
+
+
+                .esquerdo    
+                    width: 48%
+                    +flexbox
+                    +flex-wrap(wrap)
+                    +align-items(center)  
+                    
+
+                    textarea
+                        resize: none
+                        height: 200px
+                        padding: 10px      
+
+                        &::placeholder
+                
+                .botao
+                    +flexbox
+                    +justify-content(center)
                     width: 100%
+                    margin-top: 30px
+                    button
+                        width: 50%
+                        border: 1px solid #aaa;
+                        background-color: transparent;
+                        height: 60px;
+
+
+        +breakpoint($tablet)
+            #formulario
+                h1
+                h2
+                form
+                    width: 75%
+                    .direito
+                        width: 100%      
+                        input
+                            margin: 0 0 20px
+                    .esquerdo   
+                        width: 100%      
+                        textarea
+                            
+                    .botao  
+                        margin-top: 20px
+                        
+                        button   
+                            width: 100%            
+
+        +breakpoint($celular)
+            #formulario
+                h1
+                h2
+                form
+                    width: 100%
+                    .direito
+                        input
+                            
+                    .esquerdo    
+                        textarea
+                            
+                    .botao   
+                        button     
+                            width: 100%
             
                 

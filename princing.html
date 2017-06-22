@@ -40,7 +40,6 @@
     <link rel="stylesheet" href="css/conteudo.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="bower_components/lightslider/dist/css/lightslider.min.css">
-    <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.min.css">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -84,7 +83,7 @@
                 <ul>
                     <li><a class="home" href="index.html">Home</a></li>
                     <li><a class="sobre" href="sobre.html">About</a></li>
-                    <li><a class="port" href="portfolio.html">Portfolio</a></li> 
+                    <li><a class="port" href="portfolio.html">Portfólio</a></li> 
                     <li><a class="port" href="princing.html">Princing</a></li> 
                     <li><a class="contato" href="contato.html">Contact</a></li>  
                     <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>                 
@@ -99,47 +98,66 @@
     </header>
     
     <main>
-        <div class="container">   
-            <section id="modelo2">
-                <div id="lightgallery-modelo2">                    
-                    <a href="images/Ensaios/Marina/01.jpg">
-                        <img src="images/Ensaios/Marina/01.jpg" />
-                    </a>
+        <!-- CONTEÚDO PÁGINA -->
+        <div class="container">
+            <div class="row">
+                <section id="contprincipal">
+                    <section class="imagemb">
+                        <img src="images/Autoral/9.jpg" alt="">
+                    </section> 
                     
-                    <a href="images/Ensaios/Marina/02.jpg">
-                        <img src="images/Ensaios/Marina/02.jpg" />
-                    </a>
+                    <div class="separador">
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                    </div> 
                     
-                    <a href="images/Ensaios/Marina/03.jpg">
-                        <img src="images/Ensaios/Marina/03.jpg" />
-                    </a>
-                    
-                    <a href="images/Ensaios/Marina/04.jpg">
-                        <img src="images/Ensaios/Marina/04.jpg" />
-                    </a>
-                    
-                    <a href="images/Ensaios/Marina/05.jpg">
-                        <img src="images/Ensaios/Marina/05.jpg" />
-                    </a>
-                    
-                    <a href="images/Ensaios/Marina/06.jpg">
-                        <img src="images/Ensaios/Marina/06.jpg" />
-                    </a>
-                    
-                    <a href="images/Ensaios/Marina/07.jpg">
-                        <img src="images/Ensaios/Marina/07.jpg" />
-                    </a>
-                    
-                    <a href="images/Ensaios/Marina/08.jpg">
-                        <img src="images/Ensaios/Marina/08.jpg" />
-                    </a>    
-                </div>    
-            </section>
+                    <section class="pacotes">
+                        <div class="basico">
+                            <h2>básico</h2>
+                            <p>Produção de 15 imagens. Até 1h de ensaio. Uso compartilhado. 
+                            <br>R$300,00 ou 10x R$480,00</p>
+                        </div>
+                        
+                        <div class="completo">
+                            <h2>completo</h2>
+                            <p>Produção de 40 imagens. Até 3h de ensaio. Uso compartilhado. 
+                            <br>R$780,00 ou 10x R$990,00 </p>
+                        </div>
+                        
+                        <div class="exclusivo">
+                            <h2>exclusivo</h2>
+                            <p>Produção ilimitada de imagens. Até 3h de ensaio. Uso exclusivo. 
+                            <br>R$1250,00 ou 10x R$1600,00</p>
+                        </div>
+                        
+                        <div class="separador">
+                            <span>*</span>
+                            <span>*</span>
+                            <span>*</span>
+                        </div>
+                        
+                        <div class="life">
+                            <h2>- life -</h2>
+                            <p>Um ensaio diferente, aonde vou te acompanhar por seus lugares favoritos e em experiências que te faze bem. Captando assim sua essencia e vivencia. 
+                            <br>R$189,00 ou 3x R$300,00</p>
+                            <p>Para outros tipos de trabalhos ou duvidas, entrar em contato.</p>
+                        </div>
+                        
+                        <div class="contato">
+                            <h2>contato</h2>
+                            <p>fcarnevale.fotografia@gmail.com </p>
+                            <p>+55 11 99719-8891</p>
+                        </div>
+                    </section>
+                </section>         
+            </div>
+            
         </div>
     </main>
     
     <!-- RODAPÉ -->
-    <footer>
+    <!--<footer>
         <div class="container">
             <div class="contato">
                 <h3>Contato</h3>
@@ -155,26 +173,13 @@
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
-    </footer>    
+    </footer> -->   
                 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/script.js"></script>
-    <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
-    <script src="bower_components/lg-thumbnail/dist/lg-thumbnail.min.js"></script>
-    <script src="bower_components/lg-pager/dist/lg-pager.min.js"></script>
-    <script src="bower_components/lg-zoom/dist/lg-zoom.min.js"></script>
-    <script src="bower_components/lg-autoplay/dist/lg-autoplay.min.js"></script>
-    <script src="bower_components/lg-fullscreen/dist/lg-fullscreen.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.materialboxed').materialbox();
-            
-            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-            $('.modal').modal();           
-        });       
-    </script>
+    <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>    
 </body>
 </html>

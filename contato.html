@@ -57,9 +57,10 @@
         <div class="container"> <!-- classe bootstrap -->
             <ul>
                 <li><a href="index.html" class="home-marker link-toggle active">Home</a></li>
-                <li><a href="sobre.html" class="sobre-marker link-toggle">Sobre</a></li>
-                <li><a href="portfolio.html" class="portfolio-marker link-toggle">Portfólio</a></li>
-                <li><a href="contato.html" class="contato-marker link-toggle">Contato</a></li>
+                <li><a href="sobre.html" class="sobre-marker link-toggle">About</a></li>
+                <li><a href="portfolio.html" class="portfolio-marker link-toggle">Portfolio</a></li>
+                <li><a href="princing.html" class="princing-marker link-toggle">Princing</a></li>
+                <li><a href="contato.html" class="contato-marker link-toggle">Contact</a></li>                
             </ul>            
         </div>        
     </nav>
@@ -81,10 +82,11 @@
             <div class="container">                
                 <ul>
                     <li><a class="home" href="index.html">Home</a></li>
-                    <li><a class="sobre" href="sobre.html">Sobre</a></li>
-                    <li><a class="port" href="portfolio.html">Portfólio</a></li> 
-                    <li><a class="contato" href="contato.html">Contato</a></li>   
-                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>                      
+                    <li><a class="sobre" href="sobre.html">About</a></li>
+                    <li><a class="port" href="portfolio.html">Portfolio</a></li> 
+                    <li><a class="port" href="princing.html">Princing</a></li> 
+                    <li><a class="contato" href="contato.html">Contact</a></li>  
+                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>                 
                 </ul>
                 
                 <!-- LOGOTIPO -->
@@ -95,21 +97,26 @@
         </nav> 
     </header>
     
-    <main>        
-        <div id="formulario">
-            <h1>
-                Deixe sua duvida!
-            </h1>
-            <h2>
-                Vamos conversar sobre o ensaio.
-            </h2>
-            <form id="form" method="POST">                
-                <input type="email" name="email" id="email" placeholder="Email *" required="required" />
-                <input type="text" name="name" id="name" placeholder="Nome *" required="required" />                
-                <input type="text" name="subject" id="subject" placeholder="Assunto *" required="required" />
-                <textarea  name="message" id="message" placeholder="Mensagem *" required="required"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+    <main>  
+        <div class="container">     
+            <div id="formulario">
+                <h2>Escreva para agendar seu ensaio ou para dúvidas e orçamento.</h2>
+                <form id="form" method="POST">
+                    <div class="direito">               
+                        <input type="email" name="email" id="email" placeholder="Email *" required="required" />
+                        <input type="text" name="name" id="name" placeholder="Nome *" required="required" />                
+                        <input type="text" name="subject" id="subject" placeholder="Assunto *" required="required" />
+                    </div>
+                    
+                    <div class="esquerdo">              
+                        <textarea  name="message" id="message" placeholder="Mensagem *" required="required"></textarea>
+                    </div>
+                    
+                    <div class="botao">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     
@@ -125,10 +132,10 @@
                 <span>(11)99719-8891</span>
             </div>
             
-            <div class="redes-sociais">
+            <!-- s<div class="redes-sociais">
                 <a href="https://www.facebook.com/fe.carnevale" class="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            </div>
+            </div> -->
         </div>
     </footer>    
                 
