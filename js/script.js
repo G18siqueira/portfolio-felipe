@@ -9,10 +9,25 @@ $(document).ready(function() {
         download: false
     });  
     
-    $("#lightgallery-autoral").lightGallery({
+    $("#lightgallery-autoral1").lightGallery({
         thumbnail: true,
         download: false
-    });  
+    }); 
+    
+    $("#lightgallery-autoral2").lightGallery({
+        thumbnail: true,
+        download: false
+    }); 
+    
+    $("#lightgallery-autoral3").lightGallery({
+        thumbnail: true,
+        download: false
+    }); 
+    
+    $("#lightgallery-autoral4").lightGallery({
+        thumbnail: true,
+        download: false
+    }); 
     
     $("#lightgallery-modelo1").lightGallery({
         thumbnail: true,

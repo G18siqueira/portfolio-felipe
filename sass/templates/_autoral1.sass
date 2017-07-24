@@ -1,0 +1,20 @@
+main
+    .container
+        #autoral1           
+            #lightgallery-autoral1 
+                +flexbox
+                +flex-direction(row)
+                +flex-wrap(wrap)
+                +justify-content(space-between)
+                    
+                a
+                    width: 49.7%
+                    margin: 0 0
+                    img
+                        width: 100%
+        +breakpoint($celular)                
+            #autoral1           
+                #lightgallery-autoral1
+                    a
+                        width: 100%
+                        img                            
